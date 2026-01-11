@@ -1,0 +1,74 @@
+/* Modern profile card styles */
+.profile-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+}
+
+.profile-card {
+  background: #fff;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  width: 100%;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+h2 {
+  color: #1e293b;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.profile-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-label {
+  color: #64748b;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.profile-value {
+  color: #1e293b;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.logout-btn {
+  margin-top: 1.5rem;
+  padding: 0.75rem 0;
+  width: 100%;
+  background: linear-gradient(90deg, #ef4444 0%, #f87171 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(239, 68, 68, 0.08);
+  transition: background 0.2s, box-shadow 0.2s, opacity 0.2s;
+}
+
+.logout-btn:hover {
+  background: linear-gradient(90deg, #dc2626 0%, #b91c1c 100%);
+  box-shadow: 0 4px 16px 0 rgba(239, 68, 68, 0.13);
+}
+

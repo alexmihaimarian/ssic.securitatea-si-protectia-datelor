@@ -1,0 +1,21 @@
+<!--
+  SECURITY NOTE: In a real app, do not store sensitive user data in the frontend.
+  This is a mock/demo. Always fetch user data securely from the backend.
+-->
+<div class="profile-container">
+  <div class="profile-card">
+    <h2>Profil Utilizator</h2>
+    <div class="profile-info">
+      <div class="profile-row">
+        <span class="profile-label">Nume:</span>
+        <span class="profile-value">{{ user?.name }}</span>
+      </div>
+      <div class="profile-row">
+        <span class="profile-label">Email:</span>
+        <span class="profile-value">{{ user?.email }}</span>
+      </div>
+    </div>
+    <button class="logout-btn" (click)="logout()">Logout</button>
+  </div>
+</div>
+

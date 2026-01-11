@@ -1,0 +1,20 @@
+<h2>Login</h2>
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+  <label>Email:</label>
+  <input formControlName="email" type="email" />
+  @if (loginForm.controls['email'].invalid && loginForm.controls['email'].touched) {
+    <div>
+      Email invalid
+    </div>
+  }
+
+  <label>Parolă:</label>
+  <input formControlName="password" type="password" />
+  @if (loginForm.controls['password'].invalid && loginForm.controls['password'].touched) {
+    <div>
+      Parolă necesară
+    </div>
+  }
+
+  <button type="submit" [disabled]="loginForm.invalid">Login</button>
+</form>
